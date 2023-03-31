@@ -18,7 +18,7 @@
   <body>
     <!-- start header-->
     <header>
-      <div class="header">
+      <div class="header w-100">
         <!-- start header top section -->
         <div
           class="header-top d-flex flex-row align-items-center justify-content-between"
@@ -110,7 +110,7 @@
     </header>
     <!-- start main -->
     <main>
-      <div class="box">
+      <div class="box w-100">
         <!-- start slider -->
         <div class="slider position-relative">
           <div class="slide fadeOut show">
@@ -149,10 +149,14 @@
               />
             </a>
           </div>
-          <button class="prev btn btn-secondary p-3 position-absolute font-23">
+          <button
+            class="prev btn btn-secondary p-3 position-absolute font-23 rounded-start-0"
+          >
             &#10094;
           </button>
-          <button class="next btn btn-secondary p-3 position-absolute font-23">
+          <button
+            class="next btn btn-secondary p-3 position-absolute font-23 rounded-end-0"
+          >
             &#10095;
           </button>
           <div class="dotes text-center position-absolute">
@@ -296,7 +300,7 @@
           </div>
           <div class="col-3 my-2">
             <div class="card p-3 rounded-0">
-              <h5 class="card-header title">Kindle E readers</h5>
+              <h5 class="card-header title">Find your ideal TV</h5>
               <img
                 src="assets/img/card-11.jpg"
                 class="card-img-top rounded-0 card-image"
@@ -317,6 +321,52 @@
               />
               <div class="card-body m-0 p-0 mt-1">
                 <a href="#" class="card-title card-link-tag">see more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- start newsletter -->
+        <div class="newsletter row mx-0">
+          <div class="left-newsletter col-6 p-0">
+            <img
+              src="assets/img/newsletter.png"
+              alt="newsletter"
+              class="newsletter-img w-100"
+            />
+          </div>
+          <div
+            class="right-newsletter col-6 d-flex align-items-center justify-content-center flex-column"
+          >
+            <h4 class="text-light mb-3">Stay in the know!</h4>
+            <p class="text-light">
+              Sign up to get the latest on sales,new products and more...
+            </p>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <input
+                  type="text"
+                  class="w-100 rounded-0 py-1 px-3"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-6 mb-3">
+                <input
+                  type="text"
+                  class="w-100 rounded-0 py-1 px-3"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="col-8">
+                <input
+                  type="email"
+                  class="w-100 rounded-0 py-1 px-3"
+                  placeholder="Email*"
+                />
+              </div>
+              <div class="col-4">
+                <button class="btn btn-secondary w-100 rounded-0 border-0">
+                  Sign Up
+                </button>
               </div>
             </div>
           </div>
