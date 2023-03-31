@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div
+          class="header-top d-flex flex-row align-items-center justify-content-between"
+        >
+          <div class="header-top-left d-flex">
+            <a href="#" class="logo">SHOP LOGO</a>
+            <div class="search-box border rounded mx-3 bg-search">
+              <a href="#" class="search-btn bg-search px-1">
+                <i class="font-18 text-secondary fa fa-search"></i>
+              </a>
+              <input
+                type="text"
+                placeholder="Search"
+                class="search-input bg-search"
+              />
+            </div>
+          </div>
+          <div class="header-top-right">
+            <a href="#" class="cart text-danger mx-3">
+              <i class="fa fa-shopping-cart font-23"></i>
+            </a>
+            <a
+              href="#"
+              class="register border rounded p-2 text-black bg-gradient"
+            >
+              <i class="fa fa-sign-in mx-1 font-18"></i>
+              Login | Sign Up
+            </a>
+          </div>
+        </div>
+        <div
+          class="header-bottom d-flex flex-row align-items-center justify-content-between"
+        >
+          <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">News</a>
+              </li>
+
+              <div class="drop-down">
+                <li class="nav-item hover" id="drop-down">
+                  <a class="nav-link" href="#" id="product">
+                    Products
+                    <i class="fa fa-caret-down font-18" id="icon"></i>
+                  </a>
+                  <ul
+                    class="drop-down-menu border bg-secondary-subtle"
+                    id="drop-down-menu"
+                  >
+                    <li class="nav-item drop-down-item">
+                      <a href="#" class="nav-link">Computers</a>
+                    </li>
+                    <li class="nav-item drop-down-item">
+                      <a href="#" class="nav-link">Smart Home</a>
+                    </li>
+                    <li class="nav-item drop-down-item">
+                      <a href="#" class="nav-link">Fashion</a>
+                    </li>
+                    <li class="nav-item drop-down-item">
+                      <a href="#" class="nav-link">Games</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">Discounts</a>
+              </li>
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item hover">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="location text-black">
+            <i class="fa fa-map-marker mx-1 font-18 text-success"></i>
+            Location
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="box">
+        <div class="slider position-relative">
+          <div class="slide fadeOut show">
+            <a href="#">
+              <img
+                src="assets/img/slider-1.jpg"
+                alt="slider 1"
+                class="slide-img w-100"
+              />
+            </a>
+          </div>
+          <div class="slide fadeOut">
+            <a href="#">
+              <img
+                src="assets/img/slider-2.jpg"
+                alt="slider 2"
+                class="slide-img w-100"
+              />
+            </a>
+          </div>
+          <div class="slide fadeOut">
+            <a href="#">
+              <img
+                src="assets/img/slider-3.jpg"
+                alt="slider 3"
+                class="slide-img w-100"
+              />
+            </a>
+          </div>
+          <div class="slide fadeOut">
+            <a href="#">
+              <img
+                src="assets/img/slider-4.jpg"
+                alt="slider 4"
+                class="slide-img w-100"
+              />
+            </a>
+          </div>
+
+          <button class="prev btn btn-secondary p-3 position-absolute font-23">
+            &#10094;
+          </button>
+          <button class="next btn btn-secondary p-3 position-absolute font-23">
+            &#10095;
+          </button>
+          <div class="dotes text-center position-absolute">
+            <span class="d-inline-block rounded-circle dot active"></span>
+            <span class="d-inline-block rounded-circle dot"></span>
+            <span class="d-inline-block rounded-circle dot"></span>
+            <span class="d-inline-block rounded-circle dot"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
