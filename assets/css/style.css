@@ -133,3 +133,23 @@ ul {
     opacity: 1;
   }
 }
+/* card */
+.card-image {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+.card .title {
+  border: none !important;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+.card-link-tag {
+  color: #007185;
+}
+.card-link-tag:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}

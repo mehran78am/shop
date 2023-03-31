@@ -44,8 +44,8 @@ function goPrev() {
     currentIndex = (currentIndex == 0) ? sliders.length - 1 : currentIndex - 1;
     changeClass();
 }
-next.addEventListener("click", goNext())
-prev.addEventListener("click", goPrev())
+next.addEventListener("click", goNext)
+prev.addEventListener("click", goPrev)
 showSliders.addEventListener("mouseover", () => clearInterval(autoChange))
 showSliders.addEventListener("mouseleave", () => autoChange = setInterval(goNext, 3000))
 dotes.forEach((dot, index) => {
