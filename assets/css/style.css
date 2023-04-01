@@ -156,3 +156,13 @@ ul {
 .right-newsletter {
   background-color: #444679;
 }
+/*carousel */
+.carousel {
+  background-color: #eaeded;
+  height: 150px;
+}
+.carousel-img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 10px;
+}
