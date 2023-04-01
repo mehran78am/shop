@@ -1,14 +1,9 @@
 //drop down
 const dropDown = document.getElementById("drop-down");
 const dropDownMenu = document.getElementById("drop-down-menu");
-const icon = document.getElementById("icon");
 dropDown.addEventListener("click", function () {
     dropDownMenu.classList.toggle("show");
-    if (icon.classList.contains("fa-caret-down")) {
-        icon.classList.replace("fa-caret-down", "fa-caret-right")
-    } else {
-        icon.classList.replace("fa-caret-right", "fa-caret-down")
-    }
+    console.log("click")
 });
 window.addEventListener("click", (e) => {
     if (e.target.matches("#product")) {
@@ -16,8 +11,6 @@ window.addEventListener("click", (e) => {
     } else {
         if (dropDownMenu.classList.contains("show")) {
             dropDownMenu.classList.remove("show")
-        } else {
-            return;
         }
     }
 })
@@ -32,9 +25,9 @@ const sliders = document.querySelectorAll(".slide");
 let autoChange = setInterval(goNext, 3000);
 function changeClass() {
     sliders.forEach((slide) => slide.classList.remove("show"))
-    dotes.forEach((dote) => dote.classList.remove("active"))
+    dotes.forEach((dote) => dote.classList.remove("show-dot"))
     sliders[currentIndex].classList.add("show");
-    dotes[currentIndex].classList.add("active");
+    dotes[currentIndex].classList.add("show-dot");
 }
 function goNext() {
     currentIndex = (currentIndex == sliders.length - 1) ? 0 : currentIndex + 1;
