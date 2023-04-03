@@ -131,6 +131,7 @@ ul {
 }
 .card .title {
   border: none !important;
+  font-size: 1rem;
   background-color: transparent;
   padding: 0;
   margin-bottom: 0.7rem;
@@ -146,11 +147,12 @@ ul {
 /*newsletter */
 .right-newsletter {
   background-color: #444679;
+  padding: 10px;
 }
 /*carousel */
 .carousel {
   background-color: #eaeded;
-  height: 150px;
+  min-height: 150px;
 }
 .carousel-img {
   width: 85px;
@@ -159,4 +161,40 @@ ul {
 }
 .footer {
   background-color: #232f3e;
+}
+/*media */
+@media (max-width: 991.98px) {
+  .slide-img {
+    height: 300px;
+  }
+  .prev,
+  .next {
+    font-size: 20px;
+  }
+  .list {
+    padding: 10px 25px;
+  }
+  body {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .register,
+  .cart,
+  .location,
+  .logo {
+    font-size: 17px;
+  }
+  .register i,
+  .cart i,
+  .location i {
+    font-size: 20px;
+  }
+  .slide-img {
+    height: 250px;
+  }
+  .prev,
+  .next {
+    font-size: 18px;
+  }
 }

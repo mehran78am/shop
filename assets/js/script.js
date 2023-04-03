@@ -3,7 +3,6 @@ const dropDown = document.getElementById("drop-down");
 const dropDownMenu = document.getElementById("drop-down-menu");
 dropDown.addEventListener("click", function () {
     dropDownMenu.classList.toggle("show");
-    console.log("click")
 });
 window.addEventListener("click", (e) => {
     if (e.target.matches("#product")) {
