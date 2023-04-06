@@ -1,3 +1,10 @@
+//burger menu
+const barBtn = document.querySelector(".burger-menu");
+const itemLi = document.querySelectorAll(".li");
+barBtn.addEventListener("click", function () {
+    itemLi.forEach((item) => item.classList.toggle("show"))
+
+})
 //drop down
 const dropDown = document.getElementById("drop-down");
 const dropDownMenu = document.getElementById("drop-down-menu");

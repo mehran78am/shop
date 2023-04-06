@@ -5,10 +5,14 @@ body {
   margin: 0;
   padding: 0 15px !important;
   background-color: #fff;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
   transition: color 1s linear;
+}
+a:active {
+  opacity: 0.5;
 }
 i {
   transition: all 1s linear;
@@ -59,6 +63,21 @@ ul {
 .logo {
   padding: 10px;
 }
+.logo-img {
+  width: 150px;
+}
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  color: #fff;
+}
+.burger-menu:active {
+  background-color: #898989 !important;
+}
 .drop-down {
   position: relative;
 }
@@ -73,6 +92,7 @@ ul {
 .show {
   display: block !important;
 }
+
 .drop-down-item {
   padding: 2px 8px;
 }
@@ -176,6 +196,9 @@ ul {
   }
   body {
     padding: 0 !important;
+  }
+  .li {
+    display: none;
   }
 }
 @media (max-width: 575.98px) {
